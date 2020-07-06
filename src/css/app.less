@@ -1,0 +1,46 @@
+// top section
+.top {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  background-color: #f7f7f7;
+  :first-child {flex-grow: 1;}
+}
+
+.add-ride {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  .start-time {
+    display: flex;
+    align-items: center;
+    > label 
+    { 
+      flex-basis: 30%;
+      flex-grow: 0;
+    }
+  }
+  .form-control {
+    margin-bottom: 5px;
+  }
+}
+
+.ride-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  div {margin: 3px;}
+}
+
+.ride {
+  width: 220px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #f7f7f7;
+  border: 1px solid rgb(205, 205, 205);
+
+  &.red {background-color: #f00;}
+}
